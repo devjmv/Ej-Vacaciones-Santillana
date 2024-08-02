@@ -148,8 +148,8 @@ public class CarModel {
         if (velocidadActual + incrementoVelocidad < velocidadMáxima)
             velocidadActual = velocidadActual + incrementoVelocidad;
         else {
+            setMultas(this.multas + 1);
             System.out.println("Maxima velocidad alcansada.");
-            setMultas(this.multas++);
         }
     }
 
