@@ -26,7 +26,7 @@ public final class App {
         System.out.print("Introduce el mes numerico de 1 al 12: ");
         int mesInt = entrada.nextInt();
         MesModel mes = new MesModel(mesInt);
-        String day = mes.GetPropiedades();
+        String day = "El mes " + mes.GetNumberDayOfMonth() + " tiene " + mes.GetDayOfMonth() + " dias.";
         System.out.println(day);
         //
 

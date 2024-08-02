@@ -34,7 +34,11 @@ public class MesModel {
         return mesArray;
     }
 
-    public String GetPropiedades() {
-        return "El mes " + this.mesArray[this.mes - 1].getNameMes() + " tiene " + this.mesArray[this.mes - 1].getDay() + " dias.";
+    public String GetNumberDayOfMonth () {
+        return this.mesArray[this.mes - 1].getNameMes();
+    }
+
+    public int GetDayOfMonth () {
+        return this.mesArray[this.mes - 1].getDay();
     }
 }
